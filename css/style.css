@@ -476,14 +476,16 @@ team.html
 }
 
 #headmanagerBlock {
-	width:100%;
+    margin: auto;
 	margin-bottom:40px;
+    text-align: center;
 }
 
 #departmanagerBlock {
 	display:flex;
 	justify-content:space-between;
-	width:100%;
+	width:90%;
+    margin: auto;
 }
 
 #johnson,
@@ -492,8 +494,6 @@ team.html
 }
 
 #johnson {
-	margin-left:28%;
-	margin-right:5%;
 	background-image:url("../img/pix/danielle_1.png");
 	background-size:cover;
 	background-position:center;
@@ -501,8 +501,6 @@ team.html
 }
 
 #badora {
-	margin-right:20%;
-	margin-left:5%;
 	background-image:url("../img/pix/demitri_1.png");
 	background-size:cover;
 	background-position:center;
@@ -520,7 +518,6 @@ team.html
 }
 
 #cynthia {
-	margin-left:30px;
 	background-image:url("../img/pix/cynthia_1.png");
 	background-size:cover;
 	background-position:center;
@@ -549,7 +546,6 @@ team.html
 }
 
 #brian {
-	margin-right:30px;
 	background-image:url("../img/pix/brian_1.png");
 	background-size:cover;
 	background-position:center;
@@ -575,13 +571,11 @@ team.html
 	font-size:16px;
 	text-align:center;
 	margin-bottom:0px;
-	margin-top:-30px;
 }
 
 .managers {
 	width:200px;
 	height:200px;
-	border:1px solid #B2543B;
 	border-radius:50%;
 	transition:all 0.4s ease-in-out;
 }
@@ -598,6 +592,15 @@ team.html
 .meetTeam:hover {
 	background-color:#ffffff;
 	color:#B2543B;
+}
+
+.meetTeam a {
+    color: white;
+    text-decoration: none;
+}
+
+.meetTeam:hover a {
+    color: #B2543B;
 }
 
 .manager_cover {
@@ -627,7 +630,6 @@ team.html
 	height:500px;
 	margin:auto;
 	margin-bottom:50px;
-	display:none;
 }
 
 #userability_depart,
@@ -966,7 +968,7 @@ textarea {
 	color:#ffffff;
 }
 
-@media only screen and (max-width:768px), 
+@media only screen and (max-width:770px), 
 {
 
 	/*index.html*/
@@ -1163,7 +1165,6 @@ textarea {
 
 	#departmanagerBlock {
 		display:block;
-		margin-left:0;
 		width:90%;
 		margin:auto;
 	}
@@ -1179,7 +1180,7 @@ textarea {
 
 	.depart_mana_pos,
 	.mana_name {
-		display:none;
+        margin-left: 150px;
 	}
 
 
