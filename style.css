@@ -16,6 +16,7 @@ body {
 	width:100%;
 	min-height:100%;
 	margin:0%;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -73,32 +74,34 @@ other nav styles
 ================*/
 
 .other_pages_nav {
-	margin-top:0;
-	width:100%;
-	background-color:#B2543B;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(0,122,188,.75);
 }
 
-.other_nav_ul {
-	width:80%;
-	float:right;
-	margin:0;
-	display:flex;
-	justify-content:space-between;
-	padding:20px 40px 20px 40px;
+.other_pages_nav a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
 }
 
-.other_nav_li {
-	font-size:20px;
-	list-style-type:none;
-	text-transform:uppercase;
+.other_pages_nav li {
+	display: inline;
+	margin: 100px;
 }
 
-.other_nav_li a {
-	color:#ffffff;
-	text-decoration:none;
-	display:inline-block;
-	text-align:center;
-	width:120px;	
+.other_pages_nav li:first-child {
+	margin-left:0;
+}
+
+.other_pages_nav li:last-child {
+	margin-right:0;
+}
+
+.other_pages_nav ul {
+	margin-top: 0;
+	padding: 20px 0px 0px 0px;
 }
 
 .intro_body {
@@ -476,16 +479,14 @@ team.html
 }
 
 #headmanagerBlock {
-    margin: auto;
+	width:100%;
 	margin-bottom:40px;
-    text-align: center;
 }
 
 #departmanagerBlock {
 	display:flex;
 	justify-content:space-between;
-	width:90%;
-    margin: auto;
+	width:100%;
 }
 
 #johnson,
@@ -494,6 +495,8 @@ team.html
 }
 
 #johnson {
+	margin-left:28%;
+	margin-right:5%;
 	background-image:url("../img/pix/danielle_1.png");
 	background-size:cover;
 	background-position:center;
@@ -501,6 +504,8 @@ team.html
 }
 
 #badora {
+	margin-right:20%;
+	margin-left:5%;
 	background-image:url("../img/pix/demitri_1.png");
 	background-size:cover;
 	background-position:center;
@@ -518,6 +523,7 @@ team.html
 }
 
 #cynthia {
+	margin-left:30px;
 	background-image:url("../img/pix/cynthia_1.png");
 	background-size:cover;
 	background-position:center;
@@ -546,6 +552,7 @@ team.html
 }
 
 #brian {
+	margin-right:30px;
 	background-image:url("../img/pix/brian_1.png");
 	background-size:cover;
 	background-position:center;
@@ -571,11 +578,13 @@ team.html
 	font-size:16px;
 	text-align:center;
 	margin-bottom:0px;
+	margin-top:-30px;
 }
 
 .managers {
 	width:200px;
 	height:200px;
+	border:1px solid #B2543B;
 	border-radius:50%;
 	transition:all 0.4s ease-in-out;
 }
@@ -592,15 +601,6 @@ team.html
 .meetTeam:hover {
 	background-color:#ffffff;
 	color:#B2543B;
-}
-
-.meetTeam a {
-    color: white;
-    text-decoration: none;
-}
-
-.meetTeam:hover a {
-    color: #B2543B;
 }
 
 .manager_cover {
@@ -630,6 +630,7 @@ team.html
 	height:500px;
 	margin:auto;
 	margin-bottom:50px;
+	display:none;
 }
 
 #userability_depart,
@@ -673,8 +674,7 @@ work.html
 	background-image:url("../img/maxres.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-position:center;
-	margin-bottom:30px;
+	margin-bottom:0px;
 }
 
 #work_block {
@@ -968,220 +968,11 @@ textarea {
 	color:#ffffff;
 }
 
-@media only screen and (max-width:770px), 
+@media only screen and (max-width:768px)
 {
 
 	/*index.html*/
 
-	header {
-		background-image:url("../img/flyinglotus.jpg");
-		background-position:center;
-		background-size:cover;
-		background-repeat:no-repeat;
-	}
-
-	.nav_ul {
-		width:80%;
-		float:right;
-		padding:0;
-		margin-right:20px;
-		padding:0;
-		padding-top:20px;
-	}
-
-	#about_index_content {
-		width:80%;
-		line-height:50px;
-	}
-
-	#button {
-		width:15%;
-		height:60px;
-	}
-
-	#featuredWorks {
-		height:1000px;
-		margin-bottom:0;
-	}
-
-	#featured_works_heading {
-		width:60%;
-	}
-
-	#featured_works_body {
-		display:block;
-		height:inherit;
-	}
-
-	.featured_works {
-		width:50%;
-		height:200px;
-		margin-bottom:50px;
-	}
-
-	#firstFeatured {
-		float:left;
-		margin-left:10px;
-	}
-
-	#secondFeatured {
-		float:right;
-		margin-right:10px;
-	}
-
-	#thirdFeatured {
-		float:left;
-		margin-left:10px;
-		margin-bottom:0px;
-	}
-
-	footer {
-		margin-top:0;
-		top:2165px;
-	}
-
-	/*about.html*/
-
-	#aboutnavCover {
-		background-image:url("../img/maxres.jpg");
-		background-size:cover;
-		background-repeat:no-repeat;
-		background-position:center;
-	}
-
-	#mission_statement_headers {
-		width:60%;
-		text-align:center;
-		margin:auto;
-		margin-bottom:20px;
-	}
-
-	#missionStatement {
-		width:100%;
-		text-align:center;
-		margin-top:0px;
-		line-height:40px;
-	}
-
-	#mission_image {
-		width:100%;
-	}
-
-	#firstGoals {
-		width:90%;
-		margin:auto;
-		padding:0;
-		margin-right:5%;
-		margin-bottom:120px;
-	}
-
-	#generalgoals {
-		margin-top:0;
-		width:100%;
-		margin:auto;
-		margin-right:0;
-		text-align:center;
-		line-height:40px;
-		float:none;
-		margin-bottom:20px;
-	}
-
-	#general_image {
-		width:100%;
-		float:none;
-		margin-left:0;
-	}
-
-	#secondGoals {
-		width:90%;
-		margin:auto;
-		padding:0;
-		margin-left:5%;
-		margin-bottom:120px;
-	}
-
-	#codegoals {
-		margin-top:0;
-		width:100%;
-		margin:auto;
-		margin-right:0;
-		text-align:center;
-		line-height:40px;
-		float:none;
-		margin-bottom:20px;
-	}
-
-	#code_image {
-		width:100%;
-		float:none;
-		margin-left:0;
-	}
-
-	#thirdGoals {
-		width:90%;
-		margin:auto;
-		padding:0;
-		margin-right:5%;
-	}
-
-	#communicationGoals {
-		margin-top:0;
-		width:100%;
-		margin:auto;
-		margin-right:0;
-		text-align:center;
-		line-height:40px;
-		float:none;
-		margin-bottom:20px;
-	}	
-
-	#communi_image {
-		width:100%;
-		float:none;
-		margin-left:0;
-	}
-
-	/*team.html*/
-
-	#teamBody {
-		width:90%;
-		margin:auto;
-	}
-
-	#headmanagerBlock {
-		margin-left:0;
-		margin-right:0;
-		display:inline-block;
-	}
-
-	#johnson {
-		margin-left:0;
-		margin-right:30%;
-	}
-
-	#badora {
-		margin-right:0;
-	}
-
-	#departmanagerBlock {
-		display:block;
-		width:90%;
-		margin:auto;
-	}
-
-	.managers {
-		display:block;
-		margin-bottom:50px;
-	}
-
-	#cynthia {
-		margin-left:0;
-	}
-
-	.depart_mana_pos,
-	.mana_name {
-        margin-left: 150px;
-	}
 
 
 }
@@ -1189,12 +980,6 @@ textarea {
 @media only screen and (max-width:450px)
 
 {
-
-
-
-
-
-
 
 }
 
