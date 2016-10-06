@@ -581,7 +581,7 @@ team.html
 	margin-top:-30px;
 }
 
-.managers {
+.manager {
 	width:200px;
 	height:200px;
 	border:1px solid #B2543B;
@@ -589,7 +589,7 @@ team.html
 	transition:all 0.4s ease-in-out;
 }
 
-.managers:hover {
+.manager:hover {
 	box-shadow:inset 0 0 0 100px rgba(178,84,59,0.6);
 }
 
