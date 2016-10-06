@@ -581,7 +581,7 @@ team.html
 	margin-top:-30px;
 }
 
-.manager {
+.manager-img {
 	width:200px;
 	height:200px;
 	border:1px solid #B2543B;
@@ -611,6 +611,10 @@ team.html
 	transition:all 0.4s ease-in-out;
 }
 
+a {
+    text-decoration: none; 
+}
+
 .meetTeam {
 	text-align:center;
 	font-size:15px;
@@ -623,6 +627,7 @@ team.html
 	transition:all 0.4s ease-in-out;
 	opacity:0;
 	transform:scale(0);
+    text-decoration: none;
 }
 
 #workers_block {
