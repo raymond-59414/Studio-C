@@ -573,14 +573,17 @@ team.html
 	margin-bottom:0px;
 }
 
-.managers {
+.manager-container {
+    margin: .5em;
+}
+.manager-img {
 	width:200px;
 	height:200px;
 	border-radius:50%;
 	transition:all 0.4s ease-in-out;
 }
 
-.managers:hover {
+.manager-img:hover {
 	box-shadow:inset 0 0 0 100px rgba(178,84,59,0.6);
 }
 
