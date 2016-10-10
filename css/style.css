@@ -32,6 +32,13 @@ universal styles BE CAREFUL
   text-decoration: none;
 }
 
+footer p{
+  background-color: #424040;
+  margin: 0;
+  text-align: center;
+  padding: 50px 0px;
+}
+
 /*================
 homepage styles
 ================*/
@@ -77,6 +84,7 @@ header {
   text-align: center;
   font-size: 1.5em;
   margin: 0% 20%;
+  padding-bottom: 25px;
 }
 
 #featuredWorks {
@@ -87,7 +95,57 @@ header {
 }
 
 #featuredWorks h1 {
-  margin-top: 10%;
+  padding-top: 30px;
+}
+
+#featured_works_body a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.featured_works {
+  display: inline-block;
+  margin: 3%;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border: 5px solid #fff;
+  transition: 1s;
+}
+
+.featured_works h4 {
+  visibility: hidden;
+  padding: 15px 0px;
+  margin: 42% 30%;
+  background-color: rgba(0,0,0,.6);
+  border: 5px solid white;
+}
+
+#firstFeatured:hover .featured_work_h4 {
+  visibility: visible;
+}
+
+#secondFeatured:hover .featured_work_h4 {
+  visibility: visible;
+}
+
+#thirdFeatured:hover .featured_work_h4 {
+  visibility: visible;
+}
+
+
+
+#firstFeatured {
+  background-image: url("../img/pix/jeff_2.png");
+}
+
+#secondFeatured {
+  background-image: url("../img/pix/dustin_1.png");
+}
+
+#thirdFeatured {
+  background-image: url("../img/pix/andrew_2.png");
 }
 
 /*================
