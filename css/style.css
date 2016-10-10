@@ -32,6 +32,13 @@ universal styles BE CAREFUL
   text-decoration: none;
 }
 
+footer p{
+  background-color: #424040;
+  margin: 0;
+  text-align: center;
+  padding: 50px 0px;
+}
+
 /*================
 homepage styles
 ================*/
