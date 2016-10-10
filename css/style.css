@@ -1,5 +1,5 @@
 /*
-color scheme 
+color scheme
 #B2543B / rgba(178,84,59) copper, nav and headers
 
 
@@ -98,7 +98,7 @@ other nav styles
 	text-decoration:none;
 	display:inline-block;
 	text-align:center;
-	width:120px;	
+	width:120px;
 }
 
 .intro_body {
@@ -262,6 +262,21 @@ general nav cover
 .navCover {
 	width:100%;
 	height:500px;
+}
+
+#headerLogo {
+	display: block;
+	margin: auto;
+	width: 350px;
+}
+
+#headerTitle {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	position: relative;
+	top: -70px;
+	font-size: 4em;
 }
 
 /*=====================
@@ -573,17 +588,14 @@ team.html
 	margin-bottom:0px;
 }
 
-.manager-container {
-    margin: .5em;
-}
-.manager-img {
+.managers {
 	width:200px;
 	height:200px;
 	border-radius:50%;
 	transition:all 0.4s ease-in-out;
 }
 
-.manager-img:hover {
+.managers:hover {
 	box-shadow:inset 0 0 0 100px rgba(178,84,59,0.6);
 }
 
@@ -680,156 +692,82 @@ work.html
 	margin-bottom:30px;
 }
 
-#work_block {
-	height:auto;
-	width:90%;
-	margin:auto;
-	padding:20px;
+#workWrapper {
+	margin: 1%;
 }
 
-#recent_site,
-#previous_site {
-	text-align:left;
-	font-size:25px;
-	font-weight:lighter;
-	padding-top:10px;
-	padding-bottom:20px;
-	border-bottom:2px solid #B2543B;
-	width:30%;
-	margin-left:0;
-	margin-bottom:10px;
+.projectWrapper {
+	float: left;
+	border-bottom: 5px solid #B2543B;
 }
 
-#previous_site {
-	width:40%;
-	padding-top:20px;
+.projectWrapper h4 {
+	color: #B2543B;
+	text-transform: uppercase;
+	text-align: center;
 }
 
-#most_recent_cover {
-	width:100%;
-	height:350px;
-	border-top-right-radius:30px;
-	border-bottom-right-radius:30px;
-	background-color:#fff2e6;
-	box-shadow:0 4px 5px #bfbfbf;
+.projectRow {
+	clear: both;
+	width: 90%;
+	margin: auto;
 }
 
-#MostRSite {
-	float:left;
-	width:80%;
-	height:350px;
-	margin-right:0;
-	background-image:url("../img/maxres.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-repeat:no-repeat;
-	box-shadow:inset -4px 0 10px #000000;
-	transition:all 0.4s ease-in-out;
+.project {
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 30px;
+	float: left;
+	width: 200px;
+	height: 100px;
+	padding: 10%;
 }
 
-#MostRSite:hover {
-	box-shadow:inset 0 0 0 400px rgba(178,84,59, 0.6);
+/*=====================
+project content
+=====================*/
+
+#emerald {
+	background-image: url("../img/emerald.jpg");
 }
 
-#most_recent_para {
-	margin-top:150px;
-	margin-right:20px;	
-	float:right;
-	width:15%;
+#popart {
+	background-image: url("../img/popart.png");
 }
 
-.card {
-	width:45%;
-	height:450px;
-	border-bottom-left-radius:30px;
-	border-bottom-right-radius:30px;
-	background-color:#fff2e6;
-	display:inline-block;
-	margin-right:54px;
-	margin-left:54px;
-	margin-bottom:30px;
-	box-shadow:0 4px 5px #bfbfbf;
+#magCover {
+	background-image: url("../img/magCover.png");
 }
 
-.left {
-	margin-left:0;
+#typeProject {
+	background-image: url("../img/typeProject.png");
 }
 
-.right {
-	margin-right:0;
+#brianhead {
+	background-image: url("../img/brianhead.jpg");
 }
 
-.pWork {
-	width:100%;
-	height:300px;
-	display:inline-block;
+#colorSchemes {
+	background-image: url("../img/colorSchemes.png");
 }
 
-#fwork {
-	background-image:url("../img/moreMurphy.png");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-	float:left;
-	box-shadow:inset 0px -4px 10px #000000;
-	margin-bottom:60px;
-	transition:all 0.4s ease-in-out;
+#infographic {
+	background-image: url("../img/infographic.png");
 }
 
-#fwork:hover {
-	box-shadow:inset 0 0 0 200px rgba(178,84,59, 0.6);
+#sketchbook {
+	background-image: url("../img/sketchbook.png");
 }
 
-#swork {
-	background-image:url("../img/murphy.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-	float:right;
-	box-shadow:inset 0px -4px 10px #000000;
-	margin-bottom:60px;
-	transition:all 0.4s ease-in-out;
+#marketingLogo {
+	background-image: url("../img/marketingLogo.jpg");
 }
 
-#swork:hover {
-	box-shadow:inset 0 0 0 200px rgba(178,84,59, 0.6);
+#anniversaryLogo {
+	background-image: url("../img/anniversaryLogo.png");
 }
 
-#twork {
-	background-image:url("../img/captainMurphy.gif");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-	float:left;
-	box-shadow:inset 0px -4px 10px #000000;
-	margin-bottom:60px;
-	transition:all 0.4s ease-in-out;
-}
 
-#twork:hover {
-	box-shadow:inset 0 0 0 200px rgba(178,84,59, 0.6);
-}
-
-#fowork {
-	background-image:url("../img/flyinglotus.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-	float:right;
-	box-shadow:inset 0px -4px 10px #000000;
-	margin-bottom:60px;
-	transition:all 0.4s ease-in-out;
-}
-
-#fowork:hover {
-	box-shadow:inset 0 0 0 200px rgba(178,84,59, 0.6);
-}
-
-.oldwebsites {
-	width:50%;
-	margin:auto;
-	text-align:center;
-}
 
 /*=====================
 contact.html
@@ -971,7 +909,7 @@ textarea {
 	color:#ffffff;
 }
 
-@media only screen and (max-width:770px), 
+@media only screen and (max-width:770px),
 {
 
 	/*index.html*/
@@ -1136,7 +1074,7 @@ textarea {
 		line-height:40px;
 		float:none;
 		margin-bottom:20px;
-	}	
+	}
 
 	#communi_image {
 		width:100%;
@@ -1200,6 +1138,3 @@ textarea {
 
 
 }
-
-
-
