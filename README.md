@@ -12,6 +12,8 @@ Currently the website is HTML/CSS/JS, so this code can be run locally on any web
     <li>Natalia Lopez</li>
     <li>Addison Sorca</li>
     <li>Raymond Heizelman</li>
+    <li>Lemuel John Aligaen</li>
+    <li>Robert Castro</li>
 </ul>
 
 <h1>COPYING / LICENSE</h1>

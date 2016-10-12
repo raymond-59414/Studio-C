@@ -241,3 +241,26 @@ About Page
 #general_image:hover .about_links a, #code_image:hover .about_links a, #communi_image:hover .about_links a {
   visibility: visible;
 }
+
+/*================
+Contact Page
+================*/
+#contact-container {
+    
+}
+
+#contact-form {
+    
+}
+
+input {
+    width: 100%;
+}
+
+google-maps-container {
+    
+}
+
+.contact-card {
+    
+}
