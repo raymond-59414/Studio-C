@@ -1,4 +1,18 @@
 /*================
+Table of Contents
+1. initial styles
+2. universal styles
+3. nav styles
+4. homepage styles
+5. about styles
+6. team styles
+7. work styles
+8. contact styles
+================*/
+
+
+
+/*================
 initial styles
 ================*/
 body {
@@ -47,6 +61,37 @@ footer p{
   margin: 0;
   text-align: center;
   padding: 50px 0px;
+}
+
+/*================
+nav styles DO NOT CHANGE
+================*/
+
+nav {
+	margin-top:0;
+	width:100%;
+	position:relative;
+}
+
+.nav_ul {
+	margin:0;
+	display:flex;
+	justify-content:space-between;
+	padding:30px 40px;
+}
+
+.nav_li {
+	font-size:20px;
+	list-style-type:none;
+	text-transform:uppercase;
+}
+
+.nav_li a {
+	color:#ffffff;
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+	width:120px;
 }
 
 /*================
@@ -164,35 +209,4 @@ header {
 
 #thirdFeatured {
   background-image: url("../img/pix/andrew_2.png");
-}
-
-/*================
-nav styles DO NOT CHANGE
-================*/
-
-nav {
-	margin-top:0;
-	width:100%;
-	position:relative;
-}
-
-.nav_ul {
-	margin:0;
-	display:flex;
-	justify-content:space-between;
-	padding:30px 40px;
-}
-
-.nav_li {
-	font-size:20px;
-	list-style-type:none;
-	text-transform:uppercase;
-}
-
-.nav_li a {
-	color:#ffffff;
-	text-decoration:none;
-	display:inline-block;
-	text-align:center;
-	width:120px;
 }
