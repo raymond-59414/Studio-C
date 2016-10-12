@@ -1,4 +1,16 @@
 /*================
+Table of Contents
+1. initial styles
+2. universal styles
+3. nav styles
+4. homepage styles
+5. about styles
+6. team styles
+7. work styles
+8. contact styles
+================*/
+
+/*================
 initial styles
 ================*/
 body {
@@ -17,6 +29,10 @@ body {
 universal styles BE CAREFUL
 ================*/
 
+.navCover {
+  background-color: #007ABC;
+}
+
 #button {
   text-align: center;
   background-color: #007abc;
@@ -26,6 +42,12 @@ universal styles BE CAREFUL
   text-transform: uppercase;
   color: #fff;
   border: 5px solid #BBBAB2;
+  transition: ease .5s;
+}
+
+#button:hover {
+  transform: scale(1.1,1.1);
+  transition: ease .5s;
 }
 
 #buttonLink {
@@ -38,6 +60,37 @@ footer p{
   text-align: center;
   padding: 50px 0px;
 	color: #fff;
+}
+
+/*================
+nav styles DO NOT CHANGE
+================*/
+
+nav {
+	margin-top:0;
+	width:100%;
+	position:relative;
+}
+
+.nav_ul {
+	margin:0;
+	display:flex;
+	justify-content:space-between;
+	padding:30px 40px;
+}
+
+.nav_li {
+	font-size:20px;
+	list-style-type:none;
+	text-transform:uppercase;
+}
+
+.nav_li a {
+	color:#ffffff;
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+	width:120px;
 }
 
 /*================
@@ -77,10 +130,6 @@ header {
   font-family: "Metropolis";
 }
 
-.intro_body {
-
-}
-
 #about_index_content {
   text-align: center;
   font-size: 1.5em;
@@ -102,7 +151,6 @@ header {
 #featured_works_body a {
   text-decoration: none;
   color: #fff;
-
 }
 
 .featured_works {
@@ -116,7 +164,7 @@ header {
 }
 
 .featured_works h4 {
-  visibility: hidden;
+  opacity: 0;
   padding: 15px 0px;
   margin: 42% 30%;
   background-color: rgba(0,0,0,.6);
@@ -124,18 +172,31 @@ header {
 }
 
 #firstFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
 #secondFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
 #thirdFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
+#firstFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
 
+#secondFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
+
+#thirdFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
 
 #firstFeatured {
   background-image: url("../img/pix/jeff_2.png");
@@ -150,32 +211,48 @@ header {
 }
 
 /*================
-nav styles DO NOT CHANGE
+about styles
 ================*/
 
-nav {
-	margin-top:0;
-	width:100%;
-	position:relative;
+/*================
+team styles
+================*/
+
+#teamPageTitleCover {
+  background-image: url("../img/maxres.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: 0% 20% ;
 }
 
-.nav_ul {
-	margin:0;
-	display:flex;
-	justify-content:space-between;
-	padding:30px 40px;
+#teamPageTitleCover h1 {
+  margin: 0;
 }
 
-.nav_li {
-	font-size:20px;
-	list-style-type:none;
-	text-transform:uppercase;
+#team_heading {
+  text-align: center;
+  color: #007abc;
+  text-transform: uppercase;
 }
 
-.nav_li a {
-	color:#ffffff;
-	text-decoration:none;
-	display:inline-block;
-	text-align:center;
-	width:120px;
+#headmanagerBlock {
+  text-align: center;
+}
+
+.managers {
+  padding: 50px;
+  display: inline-block;
+}
+
+.mana_pos {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#johnson::before {
+  
 }
