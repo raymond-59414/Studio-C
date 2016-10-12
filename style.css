@@ -1,4 +1,16 @@
 /*================
+Table of Contents
+1. initial styles
+2. universal styles
+3. nav styles
+4. homepage styles
+5. about styles
+6. team styles
+7. work styles
+8. contact styles
+================*/
+
+/*================
 initial styles
 ================*/
 body {
@@ -11,16 +23,15 @@ body {
   src:url("fonts/metropolis/Metropolis-Regular.otf");
 }
 
-h1{
-  font-size: 3.6em;
-  margin-bottom: 15px;
-  color: #007abc;
-}
 @charset "UTF-8";
 
 /*================
 universal styles BE CAREFUL
 ================*/
+
+.navCover {
+  background-color: #007ABC;
+}
 
 #button {
   text-align: center;
@@ -30,7 +41,12 @@ universal styles BE CAREFUL
   padding: 5px 35px;
   text-transform: uppercase;
   color: #fff;
-  border: 5px solid #BBBAB2;
+  transition: ease .5s;
+}
+
+#button:hover {
+  transform: scale(1.1,1.1);
+  transition: ease .5s;
 }
 
 #buttonLink {
@@ -41,8 +57,40 @@ footer p{
   background-color: #424040;
   margin: 0;
   text-align: center;
-  padding: 30px 0px;
-	color: #fff;
+  padding: 50px 0px;
+  color: #fff;
+  clear: left;
+}
+
+/*================
+nav styles DO NOT CHANGE
+================*/
+
+nav {
+	margin-top:0;
+	width:100%;
+	position:relative;
+}
+
+.nav_ul {
+	margin:0;
+	display:flex;
+	justify-content:space-between;
+	padding:30px 40px;
+}
+
+.nav_li {
+	font-size:20px;
+	list-style-type:none;
+	text-transform:uppercase;
+}
+
+.nav_li a {
+	color:#ffffff;
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+	width:120px;
 }
 
 /*================
@@ -82,11 +130,8 @@ header {
   font-family: "Metropolis";
 }
 
-.intro_body {
-
-}
-
 #about_index_content {
+  line-height: 1.5em;
   text-align: center;
   font-size: 1.5em;
   margin: 0% 20%;
@@ -94,14 +139,10 @@ header {
 }
 
 #featuredWorks {
-  background-color: #4e9dcb;
+  background-color: #007abc;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-}
-
-#featured_works_heading{
-  color: #fff;
 }
 
 #featuredWorks h1 {
@@ -111,7 +152,6 @@ header {
 #featured_works_body a {
   text-decoration: none;
   color: #fff;
-
 }
 
 .featured_works {
@@ -125,7 +165,7 @@ header {
 }
 
 .featured_works h4 {
-  visibility: hidden;
+  opacity: 0;
   padding: 15px 0px;
   margin: 42% 30%;
   background-color: rgba(0,0,0,.6);
@@ -133,18 +173,31 @@ header {
 }
 
 #firstFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
 #secondFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
 #thirdFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
+#firstFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
 
+#secondFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
+
+#thirdFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
 
 #firstFeatured {
   background-image: url("../img/pix/jeff_2.png");
@@ -159,85 +212,131 @@ header {
 }
 
 /*================
-nav styles DO NOT CHANGE
+about styles
 ================*/
-
-nav {
-	margin-top:0;
-	width:100%;
-	position:relative;
+#aboutPageTitleCover {
+  background-image: url("../img/index2.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: 0% 20% ;
 }
 
-.nav_ul {
-	margin:0;
-	display:flex;
-	justify-content:space-between;
-	padding:30px 40px;
-}
-
-.nav_li {
-	font-size:20px;
-	list-style-type:none;
-	text-transform:uppercase;
-}
-
-.nav_li a {
-	color:#ffffff;
-	text-decoration:none;
-	display:inline-block;
-	text-align:center;
-	width:120px;
-}
-
-/*================
-About Page
-================*/
-
-#about_header {
-  width:100%;
-  height:500px;
-  background-image:url("../img/index2.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position:center;
+#aboutPageTitleCover h1 {
+  margin: 0;
 }
 
 #about_block{
   margin: 0 20%;
 }
-
-.title{
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-  padding-top: 70px;
-  font-size: 7em;
-  font-weight: 600;
-  letter-spacing: 3px;
+#about_block p{
+  font-size: 13pt;
 }
 
-.about_links{
-  height: 220px;
+#mission_statement_headers{
+  font-size: 40pt;
+  text-align: center;
+  color: #007abc;
 }
 
-.about_links a{
-  position: relative;
-  visibility: hidden;
-  display: inline-block;
-  font-size: 20pt;
-  padding: 4px 6px;
-  text-align: center;
-  text-decoration: none;
+#about_image{
+  height: 250px;
+  float: left;
+  margin: 0 30px 30px 0;
+}
+
+#about_goals li{
+  margin: 25px 0;
+}
+
+#about_goals h4{
+  font-size: 18pt;
+  color: #007abc;
+}
+
+#description{
+  margin-top:30px;
+}
+/*================
+team styles
+================*/
+
+#teamPageTitleCover {
+  background-image: url("../img/maxres.jpg");
   color: #fff;
-  border: 3px solid white;
-  margin: 90px 100px;
+  text-align: center;
+  padding: 100px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: 0% 20% ;
 }
 
-#general_image, #code_image, #communi_image {
-  background-image: url("../img/pix/jeff_2.png");
-  background-repeat: no-repeat;
+#teamPageTitleCover h1 {
+  margin: 0;
 }
 
-#general_image:hover .about_links a, #code_image:hover .about_links a, #communi_image:hover .about_links a {
-  visibility: visible;
+#team_heading {
+  text-align: center;
+  color: #007abc;
+  text-transform: uppercase;
+}
+
+#headmanagerBlock {
+  text-align: center;
+}
+
+#departmanagerBlock {
+  text-align: center;
+}
+
+.managers {
+  padding: 25px;
+  display: inline-block;
+  text-align: center;
+}
+
+.mana_pos {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.managerPic {
+  border: 10px solid white;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+#workers_block {
+  margin: 0% 10% 5% 10%;
+  text-align: center;
+}
+
+.block_headers {
+  text-align: center;
+  color: #007abc;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.block_intro {
+  text-align: center;
+  margin: 0% 20%;
+}
+
+.worker {
+  text-align: center;
+  display: inline-block;
+  font-size: .8em;
+}
+
+.deptWorkerImg {
+  border: 10px solid white;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
 }
