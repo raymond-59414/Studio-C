@@ -10,8 +10,6 @@ Table of Contents
 8. contact styles
 ================*/
 
-
-
 /*================
 initial styles
 ================*/
@@ -209,4 +207,51 @@ header {
 
 #thirdFeatured {
   background-image: url("../img/pix/andrew_2.png");
+}
+
+/*================
+about styles
+================*/
+
+/*================
+team styles
+================*/
+
+#teamPageTitleCover {
+  background-image: url("../img/maxres.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: 0% 20% ;
+}
+
+#teamPageTitleCover h1 {
+  margin: 0;
+}
+
+#team_heading {
+  text-align: center;
+  color: #007abc;
+  text-transform: uppercase;
+}
+
+#headmanagerBlock {
+  text-align: center;
+}
+
+.managers {
+  padding: 50px;
+  display: inline-block;
+}
+
+.mana_pos {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#johnson::before {
+  
 }
