@@ -17,6 +17,10 @@ body {
 universal styles BE CAREFUL
 ================*/
 
+.navCover {
+  background-color: #007ABC;
+}
+
 #button {
   text-align: center;
   background-color: #007abc;
@@ -82,10 +86,6 @@ header {
   font-family: "Metropolis";
 }
 
-.intro_body {
-
-}
-
 #about_index_content {
   text-align: center;
   font-size: 1.5em;
@@ -142,7 +142,17 @@ header {
   transition: ease 1s;
 }
 
+#firstFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
 
+#secondFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
+
+#thirdFeatured .featured_work_h4 {
+  transition: ease 1s;
+}
 
 #firstFeatured {
   background-image: url("../img/pix/jeff_2.png");
