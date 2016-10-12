@@ -26,6 +26,12 @@ universal styles BE CAREFUL
   text-transform: uppercase;
   color: #fff;
   border: 5px solid #BBBAB2;
+  transition: ease .5s;
+}
+
+#button:hover {
+  transform: scale(1.1,1.1);
+  transition: ease .5s;
 }
 
 #buttonLink {
@@ -101,7 +107,6 @@ header {
 #featured_works_body a {
   text-decoration: none;
   color: #fff;
-
 }
 
 .featured_works {
@@ -115,7 +120,7 @@ header {
 }
 
 .featured_works h4 {
-  visibility: hidden;
+  opacity: 0;
   padding: 15px 0px;
   margin: 42% 30%;
   background-color: rgba(0,0,0,.6);
@@ -123,15 +128,18 @@ header {
 }
 
 #firstFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
 #secondFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
 #thirdFeatured:hover .featured_work_h4 {
-  visibility: visible;
+  opacity: 1;
+  transition: ease 1s;
 }
 
 
