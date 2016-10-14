@@ -24,31 +24,38 @@
             
             <div id="contact-container">
                 <h1>Contact Studio C</h1>
+                
                 <form id="contact-form">
-                    <label for="user_name">Name: </label>
+                    <label for="user_name">Name:</label>
                     <input type="text" name="user_name" id="user_name" required/>
-                    <label for="user_email">Email: </label>
+                    
+                    <label for="user_email">Email:</label>
                     <input type="email" name="user_email" id="user_email" required/>
-                    <label for="user_request">Request: </label>
+                    
+                    <label for="user_request">Request:</label>
                     <textarea id="user_request"></textarea>
+                    
                     <input type="submit" value="Submit" id="submit"/>
                 </form>
 
                 <!-- Google maps iframe -->
-                <div id="google-maps-container">
-                    <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=7050+Shelbourne+Avenue,+Las+Vegas,+NV&amp;aq=1&amp;oq=7050+W.+Shelbourne+Av&amp;sll=38.502032,-117.02306&amp;sspn=13.14326,28.54248&amp;ie=UTF8&amp;hq=&amp;hnear=7050+W+Shelbourne+Ave,+Las+Vegas,+Nevada+89113&amp;t=h&amp;z=14&amp;ll=36.037792,-115.246526" target="_new" id="link_big_map">
-                        <iframe id="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=7050+Shelbourne+Avenue,+Las+Vegas,+NV&amp;aq=1&amp;oq=7050+W.+Shelbourne+Av&amp;sll=38.502032,-117.02306&amp;sspn=13.14326,28.54248&amp;ie=UTF8&amp;hq=&amp;hnear=7050+W+Shelbourne+Ave,+Las+Vegas,+Nevada+89113&amp;t=h&amp;z=14&amp;ll=36.037792,-115.246526&amp;output=embed"></iframe>
-                    </a>
-                </div>
+                <div id="info">
+                    <div id="google-maps-container">
+                        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=7050+Shelbourne+Avenue,+Las+Vegas,+NV&amp;aq=1&amp;oq=7050+W.+Shelbourne+Av&amp;sll=38.502032,-117.02306&amp;sspn=13.14326,28.54248&amp;ie=UTF8&amp;hq=&amp;hnear=7050+W+Shelbourne+Ave,+Las+Vegas,+Nevada+89113&amp;t=h&amp;z=14&amp;ll=36.037792,-115.246526" target="_new" id="link_big_map">
+                            <iframe id="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=7050+Shelbourne+Avenue,+Las+Vegas,+NV&amp;aq=1&amp;oq=7050+W.+Shelbourne+Av&amp;sll=38.502032,-117.02306&amp;sspn=13.14326,28.54248&amp;ie=UTF8&amp;hq=&amp;hnear=7050+W+Shelbourne+Ave,+Las+Vegas,+Nevada+89113&amp;t=h&amp;z=14&amp;ll=36.037792,-115.246526&amp;output=embed"></iframe>
+                        </a>
+                    </div> <!-- END google-maps-container -->
 
-                <div id="chang_contact" class="contact-card">
-                    <h2>Ms. Chang’s Contact</h2>
-                    <p>Cindi Chang</p>
-                    <p>(702) 799-5766 ext. 4019</p>
-                    <p id="email">clchang@interact.ccsd.net</p>
-                </div>
+                    <div id="chang_contact" class="contact-card">
+                        <h2>Ms. Chang’s Contact</h2>
+                        <p>Cindi Chang</p>
+                        <p>(702) 799-5766 ext. 4019</p>
+                        <p id="email">clchang@interact.ccsd.net</p>
+                    </div>
+                    
+                </div> <!-- END info -->
                 
-            </div>
+            </div> <!-- END contact-container -->
             
         </body>
 

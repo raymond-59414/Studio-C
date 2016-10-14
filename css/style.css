@@ -295,3 +295,44 @@ team styles
   height: 100px;
   width: 100px;
 }
+
+/*================
+contact styles
+================*/
+#contact-container {
+    margin: 1em;
+    
+}
+
+#contact-form {
+    width: 50%;
+    float: left;
+}
+
+#contact-form label {
+    display: block;
+    margin: .5em 0;
+}
+
+#contact-form input {
+    display: block;
+    width: 100%;
+}
+
+#user_request {
+    width: 100%;
+}
+
+#submit {
+    width: auto;
+}
+
+#google-maps-container {
+    margin: 5em 0;
+}
+
+#change_contact {
+    
+}
+
+
