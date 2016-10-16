@@ -286,6 +286,21 @@ about styles
 team styles
 ================*/
 
+#teamPageTitleCover {
+  background-image: url("../img/maxres.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: 0% 20% ;
+}
+
+#teamPageTitleCover h1 {
+  margin: 0;
+}
+
 #team_heading {
   text-align: center;
   color: #007abc;
@@ -306,6 +321,20 @@ team styles
   text-align: center;
 }
 
+.depart_mana_pos {
+  transition:all 0.4s ease-in-out;
+  border:1px solid #000000;
+  width:60%;
+  margin:auto;
+  padding:10px 5px 10px 5px;
+}
+
+.depart_mana_pos:hover {
+  border:1px solid #007abc;
+  background-color:#007abc;
+  color:#ffffff;
+}
+
 .mana_pos {
   font-weight: bolder;
   text-transform: uppercase;
@@ -318,9 +347,21 @@ team styles
   width: 200px;
 }
 
+.teamBut {
+  color:#000000;
+}
+
 #workers_block {
   margin: 0% 10% 5% 10%;
   text-align: center;
+}
+
+#usability_depart,
+#marketing_depart,
+#code_depart,
+#graphic_depart,
+#content_depart {
+  display:none;
 }
 
 .block_headers {
@@ -347,6 +388,7 @@ team styles
   height: 100px;
   width: 100px;
 }
+
 
 /*================
 Work styles
