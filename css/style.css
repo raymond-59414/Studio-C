@@ -29,6 +29,10 @@ body {
 universal styles BE CAREFUL
 ================*/
 
+footer {
+	margin: 0;
+}
+
 .navCover {
   background-color: #007ABC;
 }
