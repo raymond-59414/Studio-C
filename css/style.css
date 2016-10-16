@@ -308,6 +308,14 @@ team styles
   text-transform: uppercase;
 }
 
+#cyn,
+#kev,
+#ray,
+#ama,
+#bri {
+	text-decoration:none;
+}
+
 #headmanagerBlock {
   text-align: center;
 }
