@@ -301,22 +301,33 @@ contact styles
 ================*/
 #contact-container {
     margin: 1em;
-    
+    text-align: center;
+}
+
+#form-container {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    border: 1px solid #bbb;
+    min-height: 520px;
 }
 
 #contact-form {
-    width: 50%;
-    float: left;
+    text-align: left;
+    padding-top: .75em;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 #contact-form label {
     display: block;
-    margin: .5em 0;
+    margin: 0 0 .5em 0;
 }
 
 #contact-form input {
     display: block;
     width: 100%;
+    margin-bottom: 1.5em;
 }
 
 #user_request {
@@ -324,15 +335,32 @@ contact styles
 }
 
 #submit {
-    width: auto;
+    margin-top: 1.5em;
+    width: 50%;
+}
+
+#info {
+    width: 45%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: inline-block;
 }
 
 #google-maps-container {
-    margin: 5em 0;
-}
-
-#change_contact {
     
 }
 
+#map {
+    width: 100%;
+}
+
+#chang_contact {
+    text-align: left;
+    padding: .5em;
+    border: 1px solid #bbb;
+}
+
+#chang_contact h2 {
+    
+}
 
