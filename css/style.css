@@ -29,6 +29,10 @@ body {
 universal styles BE CAREFUL
 ================*/
 
+footer {
+	margin: 0;
+}
+
 .navCover {
   background-color: #007ABC;
 }
@@ -60,6 +64,22 @@ footer p{
   text-align: center;
   padding: 50px 0px;
   color: #fff;
+  clear:left;
+}
+
+#pageTitleCover {
+  background-image: url("../img/maxres.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: 0% 20% ;
+}
+
+#pageTitleCover h1 {
+  margin: 0;
 }
 
 /*================
@@ -200,20 +220,68 @@ header {
 }
 
 #firstFeatured {
-  background-image: url("../img/pix/jeff_2.png");
+  background-image: url("../img/emerald.jpg");
 }
 
 #secondFeatured {
-  background-image: url("../img/pix/dustin_1.png");
+  background-image: url("../img/brianhead.jpg");
 }
 
 #thirdFeatured {
-  background-image: url("../img/pix/andrew_2.png");
+  background-image: url("../img/popart.png");
 }
+
 
 /*================
 about styles
 ================*/
+
+#aboutPageTitleCover {
+  background-image: url("../img/index2.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: 0% 20% ;
+}
+
+#aboutPageTitleCover h1 {
+  margin: 0;
+}
+
+#about_block{
+  margin: 0 20%;
+}
+#about_block p{
+  font-size: 13pt;
+}
+
+#mission_statement_headers{
+  font-size: 40pt;
+  text-align: center;
+  color: #007abc;
+}
+
+#about_image{
+  height: 250px;
+  float: left;
+  margin: 0 30px 30px 0;
+}
+
+#about_goals li{
+  margin: 25px 0;
+}
+
+#about_goals h4{
+  font-size: 18pt;
+  color: #007abc;
+}
+
+#description{
+  margin-top:30px;
+}
 
 /*================
 team styles
@@ -240,6 +308,14 @@ team styles
   text-transform: uppercase;
 }
 
+#cyn,
+#kev,
+#ray,
+#ama,
+#bri {
+	text-decoration:none;
+}
+
 #headmanagerBlock {
   text-align: center;
 }
@@ -254,6 +330,21 @@ team styles
   text-align: center;
 }
 
+.depart_mana_pos {
+  transition:all 0.4s ease-in-out;
+  border:1px solid #000000;
+  width:60%;
+  margin:auto;
+  padding:10px 5px 10px 5px;
+	text-decoration: none;
+}
+
+.depart_mana_pos:hover {
+  border:1px solid #007abc;
+  background-color:#007abc;
+  color:#ffffff;
+}
+
 .mana_pos {
   font-weight: bolder;
   text-transform: uppercase;
@@ -266,9 +357,21 @@ team styles
   width: 200px;
 }
 
+.teamBut {
+  color:#000000;
+}
+
 #workers_block {
   margin: 0% 10% 5% 10%;
   text-align: center;
+}
+
+#usability_depart,
+#marketing_depart,
+#code_depart,
+#graphic_depart,
+#content_depart {
+  display:none;
 }
 
 .block_headers {
@@ -297,6 +400,71 @@ team styles
 }
 
 /*================
+Work styles
+================*/
+
+#workWrapper {
+  margin: 0 20%;
+  margin-top: 5%;
+}
+
+.project {
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projectWrapper {
+  display: inline-block;
+}
+
+#workWrapper h4 {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+#emerald {
+  background-image: url("../img/emerald.jpg");
+}
+
+#popart {
+  background-image: url("../img/popart.png");
+}
+
+#magCover {
+  background-image: url("../img/magCover.png");
+}
+
+#typeProject {
+  background-image: url("../img/typeProject.png");
+}
+
+#brianhead {
+  background-image: url("../img/brianhead.jpg");
+}
+
+#colorSchemes {
+  background-image: url("../img/colorSchemes.png");
+}
+
+#infographic {
+  background-image: url("../img/infographic.png");
+}
+
+#sketchbook {
+  background-image: url("../img/sketchbook.png");
+}
+
+#marketingLogo {
+  background-image: url("../img/marketingLogo.jpg");
+}
+
+#anniversaryLogo {
+  background-image: url("../img/anniversaryLogo.png");
+}
+
+/*================
 contact styles
 ================*/
 #contact-container {
@@ -314,7 +482,7 @@ contact styles
 
 #contact-form {
     text-align: left;
-    padding-top: .75em;
+    padding-top: 2em;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
@@ -324,19 +492,15 @@ contact styles
     margin: 0 0 .5em 0;
 }
 
-#contact-form input {
+#user_name, #user_email, #user_request {
     display: block;
     width: 100%;
     margin-bottom: 1.5em;
 }
 
-#user_request {
-    width: 100%;
-}
-
 #submit {
     margin-top: 1.5em;
-    width: 50%;
+    width: initial;
 }
 
 #info {
@@ -364,3 +528,4 @@ contact styles
     
 }
 
+>>>>>>> contact-revision
