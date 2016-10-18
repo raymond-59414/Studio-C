@@ -470,6 +470,7 @@ contact styles
 #contact-container {
     margin: 1em;
     text-align: center;
+    min-width: 600px;
 }
 
 #form-container {
@@ -477,12 +478,12 @@ contact styles
     width: 45%;
     vertical-align: top;
     border: 1px solid #bbb;
-    min-height: 520px;
+    height: 600px;
 }
 
 #contact-form {
     text-align: left;
-    padding-top: 2em;
+    margin-top: 2em;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
@@ -516,6 +517,7 @@ contact styles
 
 #map {
     width: 100%;
+    min-height: 500px;
 }
 
 #chang_contact {
@@ -527,5 +529,3 @@ contact styles
 #chang_contact h2 {
     
 }
-
->>>>>>> contact-revision
