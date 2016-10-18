@@ -399,7 +399,6 @@ team styles
   width: 100px;
 }
 
-
 /*================
 Work styles
 ================*/
@@ -466,15 +465,67 @@ Work styles
 }
 
 /*================
-Contact styles
+contact styles
 ================*/
-
-#contactWrapper {
-  margin: 0 20%;
-  margin-top: 5%;
+#contact-container {
+    margin: 1em;
+    text-align: center;
 }
 
-#contactWrapper label, #contactWrapper input {
-  margin: 10px;
-  display: block;
+#form-container {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    border: 1px solid #bbb;
+    min-height: 520px;
 }
+
+#contact-form {
+    text-align: left;
+    padding-top: 2em;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+#contact-form label {
+    display: block;
+    margin: 0 0 .5em 0;
+}
+
+#user_name, #user_email, #user_request {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+#submit {
+    margin-top: 1.5em;
+    width: initial;
+}
+
+#info {
+    width: 45%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: inline-block;
+}
+
+#google-maps-container {
+    
+}
+
+#map {
+    width: 100%;
+}
+
+#chang_contact {
+    text-align: left;
+    padding: .5em;
+    border: 1px solid #bbb;
+}
+
+#chang_contact h2 {
+    
+}
+
+>>>>>>> contact-revision
