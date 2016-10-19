@@ -58,7 +58,7 @@ footer {
   text-decoration: none;
 }
 
-footer p{
+footer p {
   background-color: #424040;
   margin: 0;
   text-align: center;
@@ -75,7 +75,8 @@ footer p{
   font-size: 2.5em;
   text-transform: uppercase;
   background-size: cover;
-  background-position: 0% 20% ;
+  background-position: 0% 20%;
+  background-attachment: fixed;
 }
 
 #pageTitleCover h1 {
@@ -140,7 +141,7 @@ header {
 	text-transform: lowercase;
 	border-bottom: none;
 	font-size: 18pt;
-	padding-top: 30px;
+	vertical-align:text-bottom;
 }
 
 #about_index_heading {
@@ -471,6 +472,7 @@ contact styles
     margin: 1em;
     text-align: center;
     min-width: 600px;
+    height: 100vh;
 }
 
 #form-container {
@@ -478,7 +480,7 @@ contact styles
     width: 45%;
     vertical-align: top;
     border: 1px solid #bbb;
-    height: 600px;
+    height: 100%;
 }
 
 #contact-form {
@@ -486,6 +488,7 @@ contact styles
     margin-top: 2em;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    height: 100vh;
 }
 
 #contact-form label {
@@ -497,10 +500,14 @@ contact styles
     display: block;
     width: 100%;
     margin-bottom: 1.5em;
+    box-sizing: border-box;
+}
+
+#user_request {
+    height: 140px;
 }
 
 #submit {
-    margin-top: 1.5em;
     width: initial;
 }
 
@@ -517,13 +524,13 @@ contact styles
 
 #map {
     width: 100%;
-    min-height: 500px;
 }
 
 #chang_contact {
     text-align: left;
     padding: .5em;
     border: 1px solid #bbb;
+    margin-bottom: 1em;
 }
 
 #chang_contact h2 {
