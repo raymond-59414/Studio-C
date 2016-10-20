@@ -181,6 +181,11 @@ header {
 }
 
 @media (max-width: 600px) {
+    #logo {
+        width: 100%;
+        height: auto;
+        padding-top: auto;
+    }
     #about_index_content {
         margin: .25em;
     }
