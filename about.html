@@ -6,15 +6,21 @@
 		<title>About | Studio C</title>
 		<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile-nav-styles.css">
 		<link rel="shorcut icon" type ="image/png" href="img/favicon.png">
 	</head>
 
 	<body>
 
 	<div class="navCover">
+        
+        <div id="mobile-header">
+            <div id="nav-button-container">
+                <div id="nav-button"></div>
+            </div> <!-- END #nav-button-container -->
+        </div> <!-- END #mobile-header -->
 
 		<nav>
-
 			<ul class="nav_ul">
 				<li class="nav_li"><a href="index.html">Home</a></li>
 				<li class="nav_li"><a href="about.html">About</a></li>
@@ -22,42 +28,39 @@
 				<li class="nav_li"><a href="work.html">Work</a></li>
 				<li class="nav_li"><a href="contact.html">Contact</a></li>
 			</ul>
-
 		</nav>
-	
-	</div>
+	</div> <!-- END #navCover -->
+        
+    <main>
+        <div id="aboutPageTitleCover" class="pageTitleCover">
+            <h1>About</h1>
+        </div>
 
-	<div id="aboutPageTitleCover">
+        <div id="about_block">
 
-		<h1>About</h1>
+                <h1 id="mission_statement_headers">Mission Statement</h1>
 
-	</div>
+                <p id="missionStatement">At Studio C, we aspire to deliver efficient, user-friendly, and quality websites; we strive to grow this business with integrity and creativity, while gaining new knowledge to allow ourselves to further pursue eloquence in our products.</p>
 
-	<div id="about_block">
+            <div id="description">
+                <img src="img/pix/cynthia_1.png" id="about_image">
 
-			<h1 id="mission_statement_headers">Mission Statement</h1>
+                <div id="about_goals">
+                    <h4>Our goals for this company are to:</h4>
 
-			<p id="missionStatement">At Studio C, we aspire to deliver efficient, user-friendly, and quality websites; we strive to grow this business with integrity and creativity, while gaining new knowledge to allow ourselves to further pursue eloquence in our products.</p>
+                    <ul>
+                        <li>Make work ethic efficient as possible through timeliness and sustaining professionalism, productivity, and organization.</li>
 
-		<div id="description">
-			<img src="img/pix/cynthia_1.png" id="about_image">
-			
-			<div id="about_goals">
-				<h4>Our goals for this company are to:</h4>
+                        <li>Fulfill clients wants and needs, using prior knowledge of HTML5, CSS3, Javascript, PHP, alongside Adobe programs, such as Illustrator and Photoshop.</li>
 
-				<ul>
-					<li>Make work ethic efficient as possible through timeliness and sustaining professionalism, productivity, and organization.</li>
-				
-					<li>Fulfill clients wants and needs, using prior knowledge of HTML5, CSS3, Javascript, PHP, alongside Adobe programs, such as Illustrator and Photoshop.</li>
+                        <li>Communicate properly with other departments of Studio C. Making sure Studio C members are satisfied with the work that has been created and requirements have been met.</li>
 
-					<li>Communicate properly with other departments of Studio C. Making sure Studio C members are satisfied with the work that has been created and requirements have been met.</li>
-			
-				</ul>
+                    </ul>
 
-			</div>
-		</div>
-	</div>
-
+                </div>
+            </div>
+        </div>
+    </main>
 	<footer>
 
 		<p>&copy; Studio C 2016 - 2017</p>
@@ -65,5 +68,6 @@
 	</footer>
 
 	</body>
-
+	<script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slideNav.js"></script>
 </html>

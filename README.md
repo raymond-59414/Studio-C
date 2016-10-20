@@ -14,6 +14,8 @@ Currently the website is HTML/CSS/JS, so this code can be run locally on any web
     <li>Raymond Heizelman</li>
     <li>Lemuel John Aligaen</li>
     <li>Robert Castro</li>
+    <li>Emerald Liu</li>
+    <li>Kaden Kellman</li>
 </ul>
 
 <h1>COPYING / LICENSE</h1>

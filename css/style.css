@@ -13,6 +13,8 @@ Table of Contents
 /*================
 initial styles
 ================*/
+@charset "UTF-8";
+
 body {
   margin: 0;
   font-family: "Metropolis";
@@ -22,8 +24,6 @@ body {
   font-family: "Metropolis";
   src:url("fonts/metropolis/Metropolis-Regular.otf");
 }
-
-@charset "UTF-8";
 
 /*================
 universal styles BE CAREFUL
@@ -50,37 +50,56 @@ footer {
 }
 
 #button:hover {
-  transform: scale(1.1,1.1);
-  transition: ease .5s;
+    transform: scale(1.1,1.1);
+    transition: ease .5s;
 }
 
 #buttonLink {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 footer p {
-  background-color: #424040;
-  margin: 0;
-  text-align: center;
-  padding: 50px 0px;
-  color: #fff;
-  clear:left;
+    background-color: #424040;
+    margin: 0;
+    text-align: center;
+    padding: 50px 0px;
+    color: #fff;
+    clear:left;
 }
 
-#pageTitleCover {
-  background-image: url("../img/maxres.jpg");
-  color: #fff;
-  text-align: center;
-  padding: 100px;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  background-size: cover;
-  background-position: 0% 20%;
-  background-attachment: fixed;
+.pageTitleCover {
+    background-image: url("../img/maxres.jpg");
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background-size: cover;
+    background-origin: padding-box;
+    background-position: 0% 20%;
 }
 
-#pageTitleCover h1 {
-  margin: 0;
+.pageTitleCover h1 {
+    margin: 0;
+    font-size: 80px;
+    
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18pt;
+    }
+    
+    .pageTitleCover h1 {
+        cfont-size: 120px;
+    }
+}
+/*================
+mobile-header styles
+================*/
+
+#mobile-header {
+    display: none;   
 }
 
 /*================
@@ -93,26 +112,27 @@ nav {
 	position:relative;
 }
 
-.nav_ul {
+nav ul {
 	margin:0;
 	display:flex;
 	justify-content:space-between;
 	padding:30px 40px;
 }
 
-.nav_li {
+nav li {
 	font-size:20px;
 	list-style-type:none;
 	text-transform:uppercase;
 }
 
-.nav_li a {
+nav li a {
 	color:#ffffff;
 	text-decoration:none;
 	display:inline-block;
 	text-align:center;
 	width:120px;
 }
+
 
 /*================
 homepage styles
@@ -125,17 +145,18 @@ header {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
+    background-attachment: fixed;
 }
 
-#logo{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 	height: 66%;
 	padding-top: 3em;
 }
 
-#tagline{
+#tagline {
 	color: #ffffff;
 	text-align: center;
 	text-transform: lowercase;
@@ -145,91 +166,97 @@ header {
 }
 
 #about_index_heading {
-  text-transform: uppercase;
-  color: #007abc;
-  text-align: center;
-  font-family: "Metropolis";
+    text-transform: uppercase;
+    color: #007abc;
+    text-align: center;
+    font-family: "Metropolis";
 }
 
 #about_index_content {
-  line-height: 1.5em;
-  text-align: center;
-  font-size: 1.5em;
-  margin: 0% 20%;
-  padding-bottom: 25px;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0% 20%;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    #about_index_content {
+        margin: .25em;
+    }
 }
 
 #featuredWorks {
-  background-color: #4e9dcb;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
+    background-color: #4e9dcb;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 #featuredWorks h1 {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
 #featured_works_body a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 .featured_works {
-  display: inline-block;
-  margin: 3%;
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  border: 5px solid #fff;
-  transition: 1s;
+    display: inline-block;
+    margin: 3%;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border: 5px solid #fff;
+    transition: 1s;
 }
 
 .featured_works h4 {
-  opacity: 0;
-  padding: 15px 0px;
-  margin: 42% 30%;
-  background-color: rgba(0,0,0,.6);
-  border: 5px solid white;
+    opacity: 0;
+    padding: 15px 0px;
+    margin: 42% 30%;
+    background-color: rgba(0,0,0,.6);
+    border: 5px solid white;
 }
 
 #firstFeatured:hover .featured_work_h4 {
-  opacity: 1;
-  transition: ease 1s;
+    opacity: 1;
+    transition: ease 1s;
 }
 
 #secondFeatured:hover .featured_work_h4 {
-  opacity: 1;
-  transition: ease 1s;
+    opacity: 1;
+    transition: ease 1s;
 }
 
 #thirdFeatured:hover .featured_work_h4 {
-  opacity: 1;
-  transition: ease 1s;
+    opacity: 1;
+    transition: ease 1s;
 }
 
 #firstFeatured .featured_work_h4 {
-  transition: ease 1s;
+    transition: ease 1s;
 }
 
 #secondFeatured .featured_work_h4 {
-  transition: ease 1s;
+    transition: ease 1s;
 }
 
 #thirdFeatured .featured_work_h4 {
-  transition: ease 1s;
+    transition: ease 1s;
 }
 
 #firstFeatured {
-  background-image: url("../img/emerald.jpg");
+    background-image: url("../img/emerald.jpg");
 }
 
 #secondFeatured {
-  background-image: url("../img/brianhead.jpg");
+    background-image: url("../img/brianhead.jpg");
 }
 
 #thirdFeatured {
-  background-image: url("../img/popart.png");
+    background-image: url("../img/popart.png");
 }
 
 
@@ -238,50 +265,76 @@ about styles
 ================*/
 
 #aboutPageTitleCover {
-  background-image: url("../img/index2.jpg");
-  color: #fff;
-  text-align: center;
-  padding: 100px;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  background-size: cover;
-  background-position: 0% 20% ;
-}
+    background-image: url("../img/index2.jpg");
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: 0% 20% ;
+    }
 
 #aboutPageTitleCover h1 {
-  margin: 0;
+    margin: 0;
 }
 
-#about_block{
-  margin: 0 20%;
+#about_block {
+    margin: 0 20%;
 }
-#about_block p{
-  font-size: 13pt;
+
+#about_block p {
+    font-size: 13pt;
 }
 
 #mission_statement_headers{
-  font-size: 40pt;
-  text-align: center;
-  color: #007abc;
+    font-size: 40pt;
+    text-align: center;
+    color: #007abc;
 }
 
 #about_image{
-  height: 250px;
-  float: left;
-  margin: 0 30px 30px 0;
+    height: 250px;
+    float: left;
+    margin: 0 30px 30px 0;
 }
 
 #about_goals li{
-  margin: 25px 0;
+    margin: 25px 0;
 }
 
 #about_goals h4{
-  font-size: 18pt;
-  color: #007abc;
+    font-size: 18pt;
+    color: #007abc;
 }
 
 #description{
-  margin-top:30px;
+    margin-top:30px;
+}
+
+@media (max-width: 600px) {
+    #about_block {
+        margin: .5em;
+        text-align: center;
+    }
+    
+    #about_image {
+        float: none;
+        margin: 2em auto;
+    }
+    
+    #about_goals h4, #about_goals ul {
+        text-align: left;
+    }
+    
+    #about_goals h4 {
+        margin: .25em 0;
+    }
+    
+    #about_goals ul {
+        margin: 0;
+    }
+    
+    #about_goals ul li {
+        margin: .75em;
+    }
 }
 
 /*================
@@ -289,24 +342,17 @@ team styles
 ================*/
 
 #teamPageTitleCover {
-  background-image: url("../img/maxres.jpg");
-  color: #fff;
-  text-align: center;
-  padding: 100px;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  background-size: cover;
-  background-position: 0% 20% ;
+    background-image: url("../img/maxres.jpg");
 }
 
 #teamPageTitleCover h1 {
-  margin: 0;
+    margin: 0;
 }
 
 #team_heading {
-  text-align: center;
-  color: #007abc;
-  text-transform: uppercase;
+    text-align: center;
+    color: #007abc;
+    text-transform: uppercase;
 }
 
 #cyn,
@@ -314,57 +360,57 @@ team styles
 #ray,
 #ama,
 #bri {
-	text-decoration:none;
+    text-decoration:none;
 }
 
 #headmanagerBlock {
-  text-align: center;
+    text-align: center;
 }
 
 #departmanagerBlock {
-  text-align: center;
+    text-align: center;
 }
 
 .managers {
-  padding: 25px;
-  display: inline-block;
-  text-align: center;
+    padding: 25px;
+    display: inline-block;
+    text-align: center;
 }
 
 .depart_mana_pos {
-  transition:all 0.4s ease-in-out;
-  border:1px solid #000000;
-  width:60%;
-  margin:auto;
-  padding:10px 5px 10px 5px;
-	text-decoration: none;
+    transition:all 0.4s ease-in-out;
+    border:1px solid #000000;
+    width:60%;
+    margin:auto;
+    padding:10px 5px 10px 5px;
+    text-decoration: none;
 }
 
 .depart_mana_pos:hover {
-  border:1px solid #007abc;
-  background-color:#007abc;
-  color:#ffffff;
+    border:1px solid #007abc;
+    background-color:#007abc;
+    color:#ffffff;
 }
 
 .mana_pos {
-  font-weight: bolder;
-  text-transform: uppercase;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .managerPic {
-  border: 10px solid white;
-  border-radius: 100%;
-  height: 200px;
-  width: 200px;
+    border: 10px solid white;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
 }
 
 .teamBut {
-  color:#000000;
+    color:#000000;
 }
 
 #workers_block {
-  margin: 0% 10% 5% 10%;
-  text-align: center;
+    margin: 0% 10% 5% 10%;
+    text-align: center;
 }
 
 #usability_depart,
@@ -372,32 +418,32 @@ team styles
 #code_depart,
 #graphic_depart,
 #content_depart {
-  display:none;
+    display:none;
 }
 
 .block_headers {
-  text-align: center;
-  color: #007abc;
-  font-size: 1.5em;
-  text-transform: uppercase;
+    text-align: center;
+    color: #007abc;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 .block_intro {
-  text-align: center;
-  margin: 0% 20%;
+    text-align: center;
+    margin: 0% 20%;
 }
 
 .worker {
-  text-align: center;
-  display: inline-block;
-  font-size: .8em;
+    text-align: center;
+    display: inline-block;
+    font-size: .8em;
 }
 
 .deptWorkerImg {
-  border: 10px solid white;
-  border-radius: 100%;
-  height: 100px;
-  width: 100px;
+    border: 10px solid white;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
 }
 
 /*================
@@ -405,64 +451,64 @@ Work styles
 ================*/
 
 #workWrapper {
-  margin: 0 20%;
-  margin-top: 5%;
+    margin: 0 20%;
+    margin-top: 5%;
 }
 
 .project {
-  height: 250px;
-  width: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .projectWrapper {
-  display: inline-block;
+    display: inline-block;
 }
 
 #workWrapper h4 {
-  font-size: 1.5em;
-  font-weight: bolder;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 
 #emerald {
-  background-image: url("../img/emerald.jpg");
+    background-image: url("../img/emerald.jpg");
 }
 
 #popart {
-  background-image: url("../img/popart.png");
+    background-image: url("../img/popart.png");
 }
 
 #magCover {
-  background-image: url("../img/magCover.png");
+    background-image: url("../img/magCover.png");
 }
 
 #typeProject {
-  background-image: url("../img/typeProject.png");
+    background-image: url("../img/typeProject.png");
 }
 
 #brianhead {
-  background-image: url("../img/brianhead.jpg");
+    background-image: url("../img/brianhead.jpg");
 }
 
 #colorSchemes {
-  background-image: url("../img/colorSchemes.png");
+    background-image: url("../img/colorSchemes.png");
 }
 
 #infographic {
-  background-image: url("../img/infographic.png");
+    background-image: url("../img/infographic.png");
 }
 
 #sketchbook {
-  background-image: url("../img/sketchbook.png");
+    background-image: url("../img/sketchbook.png");
 }
 
 #marketingLogo {
-  background-image: url("../img/marketingLogo.jpg");
+    background-image: url("../img/marketingLogo.jpg");
 }
 
 #anniversaryLogo {
-  background-image: url("../img/anniversaryLogo.png");
+    background-image: url("../img/anniversaryLogo.png");
 }
 
 /*================
