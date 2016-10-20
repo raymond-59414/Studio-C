@@ -7,16 +7,14 @@
  */
 
 /* Notes
-    This script is repurposed from an attempted swcta.net redesign. It requires a nav element, a button (can be a div) with an id of "nav-button", a 100% width div with the id "nav-button-container"
+    This script is repurposed from an attempted swcta.net redesign. It requires a nav element, a button (can be a div) with an id of "nav-button", a 100% width div with the id "nav-button-container", and a main element.
 */
 
+// Declaration of variables for DOM elements and onpage
 var nav = document.getElementsByTagName("nav")[0],
     navButton = document.getElementById("nav-button"),
     navButtonContainer = document.getElementById("nav-button-container"),
     main = document.getElementsByTagName("main")[0],
-    sidebar = document.getElementById("sidebar"),
-   
-    //main = document.getElementsByTagName("main")[0],
     onpage = false; // Decides if Nav is in view of user
 
 // Puts Nav on page
