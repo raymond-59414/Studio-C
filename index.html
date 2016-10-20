@@ -5,8 +5,10 @@
 		<meta charset="utf-8" content="width=screen-width initial-scale=1.0"/>
 		<title>Studio C | 2017</title>
 		<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="shorcut icon" type ="image/png" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/mobile-nav-styles.css">
+		<link rel="shorcut icon" type="image/png" href="img/favicon.png">
 	</head>
 
 	<body>
@@ -14,7 +16,12 @@
 		<div class="wrapper">
 
 		<header>
-
+            <div id="mobile-header">
+                <div id="nav-button-container">
+                    <div id="nav-button"></div>
+                </div>
+            </div> <!-- END #mobile-header -->
+            
 			<nav>
 				<ul class="nav_ul">
 					<li class="nav_li"><a href="index.html">Home</a></li>
@@ -24,8 +31,11 @@
 					<li class="nav_li"><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
-
-			<img src="img/logo.png" id="logo">
+            
+            <!-- Call the graphics department and request an SVG of the logo -->
+            <object type="image/svg+xml" data="file.svg">
+                <img src="img/logo.png" id="logo" />
+            </object>
 
 			<h3 id="tagline">"Not compatible with IE 6 or less."</h3>
 
