@@ -1,15 +1,15 @@
 
 #mobile-header, #nav-button {
-    height: .5in;
+    height: .6in;
 }
 
 #mobile-header {
     width: 100vh;
-    background-color: black;
+    background-color: #007ABC;
 }
 
 #nav-button {
-    width: .5in;
+    width: .6in;
     background-color: white;
 }
 
@@ -27,11 +27,11 @@
     nav {
         left: -300px;
         top: 0;
-        background-color: black;
         color: #333;
         margin: 0;
         position: fixed;
         height: 100vh;
+        background-color: #007ABC;
     }
     
     nav ul {

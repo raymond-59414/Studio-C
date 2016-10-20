@@ -169,6 +169,12 @@ header {
   padding-bottom: 25px;
 }
 
+@media (max-width: 600px) {
+    #about_index_content {
+        margin: .25em;
+    }
+}
+
 #featuredWorks {
   background-color: #4e9dcb;
   color: #fff;
@@ -262,10 +268,11 @@ about styles
   margin: 0;
 }
 
-#about_block{
+#about_block {
   margin: 0 20%;
 }
-#about_block p{
+
+#about_block p {
   font-size: 13pt;
 }
 
@@ -292,6 +299,34 @@ about styles
 
 #description{
   margin-top:30px;
+}
+
+@media (max-width: 600px) {
+    #about_block {
+        margin: .5em;
+        text-align: center;
+    }
+    
+    #about_image {
+        float: none;
+        margin: 2em auto;
+    }
+    
+    #about_goals h4, #about_goals ul {
+        text-align: left;
+    }
+    
+    #about_goals h4 {
+        margin: .25em 0;
+    }
+    
+    #about_goals ul {
+        margin: 0;
+    }
+    
+    #about_goals ul li {
+        margin: .75em;
+    }
 }
 
 /*================
