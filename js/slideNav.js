@@ -8,6 +8,8 @@
 
 /* Notes
     This script is repurposed from an attempted swcta.net redesign. It requires a nav element, a button (can be a div) with an id of "nav-button", a 100% width div with the id "nav-button-container", and a main element.
+    
+    Important: It is the navButtonContainer that is translated, NOT the navButton itself.
 */
 
 // Declaration of variables for DOM elements and onpage
