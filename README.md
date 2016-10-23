@@ -13,7 +13,7 @@ Currently the website is HTML/CSS/JS, so this code can be run locally on any web
     <li>Addison Sorca</li>
     <li>Raymond Heizelman</li>
     <li>Lemuel John Aligaen</li>
-    <li>Robert Castro</li>
+    <li>Robert Casarotto</li>
     <li>Emerald Liu</li>
     <li>Kaden Kellman</li>
 </ul>
