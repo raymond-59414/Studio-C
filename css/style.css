@@ -522,7 +522,6 @@ contact styles
 #contact-container {
     margin: 1em;
     text-align: center;
-    min-width: 600px;
     height: 100vh;
 }
 
@@ -585,5 +584,24 @@ contact styles
 }
 
 #chang_contact h2 {
+    
+}
+
+@media (max-width:600px) {
+    
+    #contact-container {
+        height: auto;
+    }
+    
+    #form-container, #info {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    #info {
+        margin-top: 1em;
+    }
     
 }
