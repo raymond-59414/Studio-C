@@ -4,28 +4,38 @@
 }
 
 #mobile-header {
-    width: 100vh;
+    width: 100vw;
     background-color: #007ABC;
 }
 
 #nav-button {
     width: .6in;
+    background-color: #007ABC;
     background-color: white;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (max-width: 5in) {
     
-    #nav-button-container, nav {
-        width: 300px;
-        transition: transform 0.33s;
-    }
-
+    /* Makes #mobile-header visible */
     #mobile-header {
         display: block;
+        background-image:url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    #nav-button-container, nav {
+        width: 75vw;
+        transition: transform 0.33s;
     }
     
     nav {
-        left: -300px;
+        left: -75vw;
         top: 0;
         color: #333;
         margin: 0;
