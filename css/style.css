@@ -90,9 +90,7 @@ footer p {
         font-size: 18pt;
     }
     
-    .pageTitleCover h1 {
-        cfont-size: 120px;
-    }
+    
 }
 /*================
 mobile-header styles
@@ -175,19 +173,21 @@ header {
 #about_index_content {
     line-height: 1.5em;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 24px;
     margin: 0% 20%;
     padding-bottom: 25px;
 }
 
-@media (max-width: 600px) {
-    #logo {
-        width: 100%;
-        height: auto;
-        padding-top: auto;
-    }
+@media (max-width: 700px) {
     #about_index_content {
         margin: .25em;
+    }
+}
+
+@media (max-width: 400px) {
+    #logo {
+        width: 100vw;
+        height: auto;
     }
 }
 
@@ -535,7 +535,7 @@ contact styles
 
 #contact-form {
     text-align: left;
-    margin-top: 2em;
+    margin: 2em 0;
     padding-left: 2.5%;
     padding-right: 2.5%;
     height: 100vh;
@@ -598,6 +598,10 @@ contact styles
         margin: 0;
         padding: 0;
         width: 100%;
+    }
+    
+    #contact-form {
+        height: auto;
     }
     
     #info {

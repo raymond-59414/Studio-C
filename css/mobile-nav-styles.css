@@ -18,7 +18,7 @@
     background-size: cover;
 }
 
-@media (max-width: 5in) {
+@media (max-width: 700px) {
     
     /* Makes #mobile-header visible */
     #mobile-header {
@@ -30,12 +30,12 @@
     }
     
     #nav-button-container, nav {
-        width: 75vw;
+        width: 250px;
         transition: transform 0.33s;
     }
     
     nav {
-        left: -75vw;
+        left: -250px;
         top: 0;
         color: #333;
         margin: 0;
