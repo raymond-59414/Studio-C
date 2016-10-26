@@ -590,10 +590,11 @@ contact styles
     
 }
 
-@media (max-width:600px) {
+@media (max-width: 700px) {
     
     #contact-container {
         height: auto;
+        margin: 12pt;
     }
     
     #form-container, #info {
