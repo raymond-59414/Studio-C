@@ -62,3 +62,11 @@ main.addEventListener("click", slideout);
 
 // Unload (slideoutclick)
 window.addEventListener("beforeunload", slideout);
+
+// For fun
+function doNotClick() {
+    while (true) {
+        window.console.log("Haha");
+    }
+}
+document.getElementById("do-not-click").addEventListener("click", doNotClick);
