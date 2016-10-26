@@ -7,7 +7,7 @@
  */
 
 /* Notes
-    This script is repurposed from an attempted swcta.net redesign. It requires a nav element containing the navigation bar, a button (can be a div) with an id of "nav-button", a div with the id "nav-button-container" that is the same width as the nav element, and a main element.
+    This script is repurposed from an attempted swcta.net redesign. It requires a nav element, a button (can be a div) with an id of "nav-button", a 100% width div with the id "nav-button-container", and a main element.
     
     Important: It is the navButtonContainer that is translated, NOT the navButton itself.
 */
@@ -62,11 +62,3 @@ main.addEventListener("click", slideout);
 
 // Unload (slideoutclick)
 window.addEventListener("beforeunload", slideout);
-
-// For fun
-function doNotClick() {
-    while (true) {
-        console.log("Haha");
-    }
-}
-document.getElementById("do-not-click").addEventListener("click", doNotClick);
