@@ -559,6 +559,7 @@ contact styles
     display: block;
     width: 100%;
     margin-bottom: 1.5em;
+    border: 1px solid gray;
     box-sizing: border-box;
 }
 
@@ -590,18 +591,27 @@ contact styles
     padding: .5em;
     border: 1px solid #bbb;
     margin-bottom: 1em;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 #chang_contact h2 {
     
 }
 
-@media (max-width: 600px) {
-    
+@media (max-width: 700px) {
     #contact-container {
         height: auto;
         margin: 12pt;
+    }
+    
+    #contact-form label {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    #contact-container {
     }
     
     #form-container, #info {

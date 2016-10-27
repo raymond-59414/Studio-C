@@ -18,6 +18,9 @@
     background-size: cover;
 }
 
+#nav-button:hover {
+    background-image: url(../img/nav-button-reverse.svg);
+}
 @media (max-width: 700px) {
     
     /* Makes #mobile-header visible */
