@@ -88,7 +88,7 @@ footer p {
 
 @media (max-width: 600px) {
     body {
-        font-size: 16pt;
+        font-size: 14pt;
     }
     
     footer p {
@@ -424,7 +424,7 @@ team styles
 }
 
 #workers_block {
-    margin: 0 10% 30px 10%;
+    margin: 0 10% 30px 10%;2
     text-align: center;
     border-top: 2px solid gray;
 }
