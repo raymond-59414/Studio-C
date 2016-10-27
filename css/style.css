@@ -343,6 +343,7 @@ about styles
     
     #about_goals ul {
         margin: 0;
+        padding-left: 2em;
     }
     
     #about_goals ul li {
@@ -424,7 +425,7 @@ team styles
 }
 
 #workers_block {
-    margin: 0 10% 30px 10%;2
+    margin: 0 10% 30px 10%;
     text-align: center;
     border-top: 2px solid gray;
 }
@@ -527,6 +528,10 @@ Work styles
 /*================
 contact styles
 ================*/
+
+#contactPageCover h1 {
+    font-size: 60px;
+}
 
 #contact-container {
     text-align: center;
