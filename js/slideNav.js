@@ -70,6 +70,6 @@ function doNotClick() {
         window.console.log("Haha");
     }
 }
-if (document.getElementById("do-not-click") !== undefined) {
+if (document.getElementById("do-not-click") !== null) {
     document.getElementById("do-not-click").addEventListener("click", doNotClick);
 }
