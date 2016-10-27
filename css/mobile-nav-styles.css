@@ -1,6 +1,7 @@
 
 #mobile-header, #nav-button {
-    height: .6in;
+    height: 48pt;
+    overflow: hidden;
 }
 
 #mobile-header {
@@ -9,10 +10,9 @@
 }
 
 #nav-button {
-    width: .6in;
+    width: 48pt;
     background-color: #007ABC;
-    background-color: white;
-    background-image: url(../img/logo.png);
+    background-image: url(../img/nav-button.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -47,22 +47,20 @@
     nav ul {
         display: block;
         padding: 0;
-        margin-left: 12pt;
         margin-top: 18pt;
     }
     
     nav ul li {
-        width: 100%;
-        
     }
     
     nav ul li a {
         text-decoration: none;
+        box-sizing: border-box;
         color: white;
         display: block;
         font-size: 24pt;
         text-align: left;
-        padding: .5em 0;
+        padding: 12pt;
         width: 100%;
     }
 }
