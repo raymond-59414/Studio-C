@@ -227,6 +227,7 @@ header {
     background-size: cover;
     border: 5px solid #fff;
     transition: 1s;
+    box-sizing: border-box;
 }
 
 .featured_works h4 {
