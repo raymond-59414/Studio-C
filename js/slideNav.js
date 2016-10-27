@@ -64,12 +64,12 @@ main.addEventListener("click", slideout);
 //window.addEventListener("beforeunload", slideout);
 
 // For fun
-function doNotClick() {
+function crashBrowser() {
     'use strict';
     while (true) {
         window.console.log("Haha");
     }
 }
 if (document.getElementById("do-not-click") !== null) {
-    document.getElementById("do-not-click").addEventListener("click", doNotClick);
+    document.getElementById("do-not-click").addEventListener("click", crashBrowser);
 }
