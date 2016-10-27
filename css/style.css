@@ -88,7 +88,7 @@ footer p {
 
 @media (max-width: 600px) {
     body {
-        font-size: 18pt;
+        font-size: 16pt;
     }
     
     footer p {
@@ -189,7 +189,6 @@ header {
 @media (max-width: 700px) {
     #about_index_content {
         margin: .25em;
-        font-size: 14pt;
     }
 }
 
@@ -425,8 +424,9 @@ team styles
 }
 
 #workers_block {
-    margin: 0% 10% 30px 10%;
+    margin: 0 10% 30px 10%;
     text-align: center;
+    border-top: 2px solid gray;
 }
 
 #usability_depart,
