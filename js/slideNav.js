@@ -24,6 +24,7 @@ function slidein() {
     'use strict'; // I hate JSLint
     nav.style.transform = "translate(100%)";
     navButtonContainer.style.transform = "translate(100%)";
+    navButton.style.backgroundImage = "url(img/nav-button-reverse.svg)";
     onpage = true;
 }
 
@@ -32,6 +33,7 @@ function slideout() {
     'use strict';
     nav.style.transform = "translate(0)";
     navButtonContainer.style.transform = "translate(0)";
+    navButton.style.backgroundImage = "url(img/nav-button.svg)";
     onpage = false;
 }
 
