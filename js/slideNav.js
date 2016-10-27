@@ -61,10 +61,11 @@ navButton.addEventListener("click", slide);
 main.addEventListener("click", slideout);
 
 // Unload (slideoutclick)
-window.addEventListener("beforeunload", slideout);
+//window.addEventListener("beforeunload", slideout);
 
 // For fun
 function doNotClick() {
+    'use strict';
     while (true) {
         window.console.log("Haha");
     }
