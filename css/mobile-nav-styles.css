@@ -7,6 +7,7 @@
 #mobile-header {
     width: 100vw;
     background-color: #007ABC;
+    position: fixed;
 }
 
 #nav-button {
@@ -45,6 +46,7 @@
         position: fixed;
         height: 100vh;
         background-color: #007ABC;
+        overflow: scroll;
     }
     
     nav ul {
@@ -70,5 +72,9 @@
     nav ul li a:hover {
         background-color: white;
         color: #007ABC;
+    }
+    
+    main {
+        padding-top: 48pt;
     }
 }

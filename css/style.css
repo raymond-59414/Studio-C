@@ -294,11 +294,11 @@ about styles
     margin: 0;
 }
 
-#about_block {
+#aboutWrapper {
     margin: 0 20%;
 }
 
-#about_block p {
+#aboutWrapper p {
     font-size: 13pt;
 }
 
@@ -328,7 +328,7 @@ about styles
 }
 
 @media (max-width: 600px) {
-    #about_block {
+    #aboutWrapper {
         margin: .5em;
         text-align: center;
     }
@@ -473,22 +473,52 @@ Work styles
 
 #workWrapper {
     margin: 0 20%;
+    margin-top: 12pt;
 }
 
 .project {
-    width: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    border-bottom: 1px solid black;
+    margin-bottom: 26pt;
+    padding-bottom: 6pt;
+    overflow: auto;
+    clear: both;
 }
 
-.projectWrapper {
-    display: inline-block;
-}
-
-#workWrapper h4 {
+.project h4 {
     font-size: 1.5em;
     font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 12pt;
+    width: 100%;
 }
+
+.project a {
+    text-decoration: none;
+}
+
+.project img {
+    width: 25%;
+    margin: 0 6pt 6pt 0;
+    float: left;
+}
+
+.project p {
+}
+
+@media (max-width: 600px) {
+    #workWrapper {
+        margin: 12pt;
+    }
+    
+    .project img {
+        width: 100%;
+    }
+    
+    .project p {
+        width: 100%;
+    }
+}
+/*
 
 #emerald {
     background-image: url("../img/emerald.jpg");
@@ -529,16 +559,12 @@ Work styles
 #anniversaryLogo {
     background-image: url("../img/anniversaryLogo.png");
 }
-
+*/
 /*================
 contact styles
 ================*/
 
-#contactPageCover h1 {
-    font-size: 60px;
-}
-
-#contact-container {
+#contactWrapper {
     text-align: center;
     margin: 12pt 15%;
 }
@@ -612,7 +638,8 @@ contact styles
 }
 
 @media (max-width: 700px) {
-    #contact-container {
+    
+    #contactWrapper {
         height: auto;
         margin: 12pt;
     }
@@ -623,8 +650,11 @@ contact styles
 }
 
 @media (max-width: 500px) {
+    #contactPageCover h1 {
+        font-size: 60px;
+    }
     
-    #contact-container {
+    #contactWrapper {
     }
     
     #form-container, #info {
