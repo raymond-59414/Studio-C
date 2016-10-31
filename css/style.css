@@ -477,7 +477,7 @@ Work styles
 }
 
 .project {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #bbb;
     margin-bottom: 26pt;
     padding-bottom: 6pt;
     overflow: auto;
@@ -507,7 +507,7 @@ Work styles
     overflow: hidden;
     text-align: center;
     padding-right: 12pt;
-    border-right: 1px solid gray;
+    border-right: 1px solid #bbb;
 }
 
 .project img {
@@ -593,7 +593,7 @@ contact styles
     display: inline-block;
     width: 45%;
     vertical-align: top;
-    border: 1px solid #bbb;
+    border: 2px solid #bbb;
     height: 100%;
     padding-bottom: 145px;
 }
@@ -618,7 +618,7 @@ contact styles
     display: block;
     width: 100%;
     margin-bottom: 1.5em;
-    border: 1px solid gray;
+    border: 2px solid #bbb;
     box-sizing: border-box;
 }
 
@@ -648,7 +648,7 @@ contact styles
 #chang_contact {
     text-align: left;
     padding: .5em;
-    border: 1px solid #bbb;
+    border: 2px solid #bbb;
     margin-bottom: 1em;
     font-size: 12pt;
 }
