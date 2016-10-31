@@ -481,34 +481,52 @@ Work styles
     margin-bottom: 26pt;
     padding-bottom: 6pt;
     overflow: auto;
-    clear: both;
 }
 
 .project h4 {
     font-size: 1.5em;
     font-weight: bolder;
     margin-top: 0;
-    margin-bottom: 12pt;
+    margin-bottom: 10pt;
     width: 100%;
+}
+
+.project .project-details-container {
+    height: 200px;
 }
 
 .project a {
     text-decoration: none;
 }
 
-.project img {
-    width: 25%;
-    margin: 0 6pt 6pt 0;
+.project .img-container {
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
     float: left;
+    overflow: hidden;
+    text-align: center;
+    padding-right: 12pt;
+    border-right: 1px solid gray;
+}
+
+.project img {
+    width: 100%;
 }
 
 .project p {
+    float: right;
+    width: 68%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     #workWrapper {
         margin: 12pt;
     }
+}
+
+@media (max-width: 600px) {
+
     
     .project img {
         width: 100%;
