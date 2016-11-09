@@ -165,7 +165,6 @@ header {
 #tagline {
 	color: #ffffff;
 	text-align: center;
-	text-transform: lowercase;
 	border-bottom: none;
 	font-size: 18pt;
 	vertical-align:text-bottom;
