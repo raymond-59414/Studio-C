@@ -1,3 +1,6 @@
+# ATTENTION
+This repository has been replaced by Studio-C-2017/Studio-C-2017.github.io
+
 # Studio-C
 
 ## SUMMARY
